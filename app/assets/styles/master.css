@@ -1,1 +1,4 @@
-/*Everything gets imported here. Make sure nothing is hard coded*/
+/*Everything gets imported here. Make sure nothing is hard coded.
+Make sure you NPM postcss IMPORT before hand or else it wont work*/
+@import "base/_variables";
+@import "base/_global";
