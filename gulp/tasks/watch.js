@@ -2,6 +2,8 @@ var gulp = require('gulp'),
 watch = require('gulp-watch'),
 browserSync = require('browser-sync').create();
 
+// ======================================================================DEFAULT
+gulp.task('default', ['watch']);
 // =================================================================BROWSER-SYNC
 gulp.task('watch', function(){
   browserSync.init({
@@ -16,4 +18,16 @@ gulp.task('watch', function(){
 watch('./app/index.html', function(){
   browserSync.reload();
 });
+// ======================================================STYLES============WATCH
+watch('./app/assets/styles/**/*.css', function(){
+  gulp.start('cssInject');
+});
+
+// Injecting the finished css build using stream, after styles has compiled.
+gulp.task('cssInject', ['styles'], function(){
+  return gulp.src('./app/build/styles/master.css')
+  .pipe(browserSync.stream());
+});
+// =============================================================================
+
 // =============================================================================
