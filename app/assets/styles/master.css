@@ -1,4 +1,14 @@
 /*Everything gets imported here. Make sure nothing is hard coded.
-Make sure you NPM postcss IMPORT before hand or else it wont work*/
+Make sure you NPM postcss IMPORT before or else it wont work*/
+
+
+
+/*Globals*/
 @import "base/_variables";
+@import "base/_mixins";
 @import "base/_global";
+
+/*Modules*/
+@import "modules/_wrapper";
+@import "modules/_prologue";
+@import "modules/_backgroundimage";

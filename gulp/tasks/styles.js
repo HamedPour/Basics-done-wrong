@@ -12,7 +12,7 @@ mixins = require('postcss-mixins');
 // =============================================================================
 
 gulp.task('styles', function(){
-  var plugins = [cssImport, simpleVars, normalize, hexrgba, autoprefixer, nested, mixins]
+  var plugins = [cssImport, mixins, simpleVars, normalize, hexrgba, autoprefixer, nested]
   return gulp.src('./app/assets/styles/master.css')
       .pipe(postcss(plugins))
       .on('error', function(errorinfo){
