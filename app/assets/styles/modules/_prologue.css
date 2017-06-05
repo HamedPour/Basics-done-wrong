@@ -16,7 +16,6 @@
 
 
     @mixin atMedium {
-      text-align: center;
       max-width: 400;
       padding-left: 25px;
       left: 4rem;
@@ -26,11 +25,13 @@
   &__greeting{
     font-size: .9rem;
     font-weight: 200;
-    margin: 0;
+    margin: 0 ;
+    padding-bottom: 10px;
 
     @mixin atMedium {
       font-size: 1.5rem;
-
+      margin: 0 ;
+      padding-bottom: 25px;
     }
 
   }
@@ -42,6 +43,7 @@
 
     @mixin atMedium {
       font-size: 4rem;
+      line-height: 60px;
     }
   }
 
@@ -49,9 +51,12 @@
     font-size: .7rem;
     font-weight: 200;
     margin: 0;
+    padding-top: 10px;
+
 
     @mixin atMedium {
       font-size: 1.1rem;
+      padding-top: 25px;
     }
   }
 

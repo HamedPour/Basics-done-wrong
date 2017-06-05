@@ -1,14 +1,14 @@
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;  
+  -webkit-text-size-adjust: 100%;
 }
 
 
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;  
+  margin: 0.67em 0;
 }
 
 
@@ -17,41 +17,41 @@ hr {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   height: 0;
-  overflow: visible;  
+  overflow: visible;
 }
 
 
 
 main {
-  display: block;  
+  display: block;
 }
 
 
 
 pre {
   font-family: monospace, monospace;
-  font-size: 1em;  
+  font-size: 1em;
 }
 
 
 
 a {
   background-color: transparent;
-  -webkit-text-decoration-skip: objects;  
+  -webkit-text-decoration-skip: objects;
 }
 
 
 
 abbr[title] {
   text-decoration: underline;
-  text-decoration: underline dotted;  
+  text-decoration: underline dotted;
 }
 
 
 
 b,
 strong {
-  font-weight: bolder;  
+  font-weight: bolder;
 }
 
 
@@ -60,25 +60,25 @@ code,
 kbd,
 samp {
   font-family: monospace, monospace;
-  font-size: 1em;  
+  font-size: 1em;
 }
 
 
 
 small {
-  font-size: 80%;  
+  font-size: 80%;
 }
 
 
 
 img {
-  border-style: none;  
+  border-style: none;
 }
 
 
 
 svg:not(:root) {
-  overflow: hidden;  
+  overflow: hidden;
 }
 
 
@@ -88,14 +88,14 @@ input,
 optgroup,
 select,
 textarea {
-  margin: 0;  
+  margin: 0;
 }
 
 
 
 button {
   overflow: visible;
-  text-transform: none;  
+  text-transform: none;
 }
 
 
@@ -104,7 +104,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button;  
+  -webkit-appearance: button;
 }
 
 
@@ -114,7 +114,7 @@ button::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
   border-style: none;
-  padding: 0;  
+  padding: 0;
 }
 
 
@@ -123,19 +123,19 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;  
+  outline: 1px dotted ButtonText;
 }
 
 
 
 fieldset {
-  padding: 0.35em 0.75em 0.625em;  
+  padding: 0.35em 0.75em 0.625em;
 }
 
 
 
 input {
-  overflow: visible;  
+  overflow: visible;
 }
 
 
@@ -147,26 +147,26 @@ legend {
   display: table;
   max-width: 100%;
   padding: 0;
-  white-space: normal;  
+  white-space: normal;
 }
 
 
 
 progress {
   display: inline-block;
-  vertical-align: baseline;  
+  vertical-align: baseline;
 }
 
 
 
 select {
-  text-transform: none;  
+  text-transform: none;
 }
 
 
 
 textarea {
-  overflow: auto;  
+  overflow: auto;
 }
 
 
@@ -175,59 +175,59 @@ textarea {
 [type="radio"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0;  
+  padding: 0;
 }
 
 
 
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
-  height: auto;  
+  height: auto;
 }
 
 
 
 [type="search"] {
   -webkit-appearance: textfield;
-  outline-offset: -2px;  
+  outline-offset: -2px;
 }
 
 
 
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;  
+  -webkit-appearance: none;
 }
 
 
 
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
-  font: inherit;  
+  font: inherit;
 }
 
 
 
 details {
-  display: block;  
+  display: block;
 }
 
 
 
 summary {
-  display: list-item;  
+  display: list-item;
 }
 
 
 
 template {
-  display: none;  
+  display: none;
 }
 
 
 
 [hidden] {
-  display: none;  
+  display: none;
 }
 
 
@@ -244,7 +244,7 @@ Make sure you NPM postcss IMPORT before or else it wont work*/
 body {
   font-family: 'Raleway', sans-serif;
   color: #E8E8E8;
-  margin: 0;  
+  margin: 0;
 }
 
 
@@ -267,6 +267,12 @@ img {
 
 
 
+a {
+  color: #E8E8E8;
+}
+
+
+
 /*Modules*/
 
 
@@ -277,6 +283,9 @@ img {
   margin-right: auto;
   padding-right: 0px;
   padding-left: 0px;
+
+
+
 }
 
 
@@ -288,18 +297,9 @@ img {
 .wrapper {
     padding-right: 100px;
     padding-left: 100px
-}
-  }
 
 
 
-@media (min-width: 1010px){
-
-
-
-.wrapper {
-    padding-right: 200px;
-    padding-left: 200px
 }
   }
 
@@ -337,7 +337,6 @@ img {
 
 
 .prologue__text-content {
-      text-align: center;
       max-width: 400;
       padding-left: 25px;
       left: 4rem
@@ -349,7 +348,8 @@ img {
 .prologue__greeting{
     font-size: .9rem;
     font-weight: 200;
-    margin: 0;
+    margin: 0 ;
+    padding-bottom: 10px;
 
   }
 
@@ -360,7 +360,9 @@ img {
 
 
 .prologue__greeting{
-      font-size: 1.5rem
+      font-size: 1.5rem;
+      margin: 0 ;
+      padding-bottom: 25px
 
   }
   }
@@ -380,7 +382,8 @@ img {
 
 
 .prologue__title {
-      font-size: 4rem
+      font-size: 4rem;
+      line-height: 60px
   }
   }
 
@@ -390,6 +393,7 @@ img {
     font-size: .7rem;
     font-weight: 200;
     margin: 0;
+    padding-top: 10px;
   }
 
 
@@ -399,7 +403,8 @@ img {
 
 
 .prologue__subtitle {
-      font-size: 1.1rem
+      font-size: 1.1rem;
+      padding-top: 25px
   }
   }
 
