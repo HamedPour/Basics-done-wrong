@@ -414,7 +414,7 @@ body {
   background-image: url("../../assets/images/background.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  /*background-color: rgba($darkGray, 0.3);*/
+  /*background-color: rgba(#000, 0.5);*/
 }
 
 
@@ -426,7 +426,7 @@ body {
 
 
 .background--misty {
-    background-color: rgba(92,90,91, 0.5);
+    background-color: rgba(33,33,33, 0.5);
 
   }
 
@@ -518,6 +518,11 @@ body {
     .row__medium-6 {
       float: left;
       width: 50%;
+    }
+
+    .row__medium-3 {
+      float: left;
+      width: 25%;
     }
   }
 
@@ -698,4 +703,32 @@ body {
       padding-left: 100px;
       margin-bottom: 20px
   }
+  }
+
+
+
+.btn {
+  background-color: rgba(33,33,33, 0.7);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 23px 0 23px 0;
+  border-bottom: 4px solid #02d58e;
+  z-index: 2;
+}
+
+
+
+.btn--active {
+    background-color: #02d58e;
+  }
+
+
+
+.topics h3 {
+    font-size: 0.8rem;
+
+    border-right: 2px solid #5c5a5b;
+    /*FIX THIS Z-INDEX PROBLEM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    /*z-index: 1; */
   }

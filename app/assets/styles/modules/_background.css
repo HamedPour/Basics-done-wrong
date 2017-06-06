@@ -2,7 +2,7 @@ body {
   background-image: url("../../assets/images/background.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  /*background-color: rgba($darkGray, 0.3);*/
+  /*background-color: rgba(#000, 0.5);*/
 }
 
 
@@ -14,7 +14,7 @@ body {
   }
 
   &--misty {
-    background-color: rgba($mistyGray, 0.5);
+    background-color: rgba($darkGray, 0.5);
 
   }
 }

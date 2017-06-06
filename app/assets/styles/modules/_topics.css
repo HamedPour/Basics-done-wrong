@@ -1,0 +1,13 @@
+.topics {
+
+  h3 {
+    font-size: 0.8rem;
+
+    border-right: 2px solid $mistyGray;
+    /*FIX THIS Z-INDEX PROBLEM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    /*z-index: 1; */
+  }
+
+
+
+}

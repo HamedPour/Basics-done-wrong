@@ -1,0 +1,13 @@
+.btn {
+  background-color: rgba($darkGray, 0.7);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 23px 0 23px 0;
+  border-bottom: 4px solid $btnGreen;
+  z-index: 2;
+
+  &--active {
+    background-color: $btnGreen;
+  }
+}
