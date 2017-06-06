@@ -1,0 +1,30 @@
+.row {
+  @mixin clearfix;
+
+
+  @mixin atMedium {
+
+    &__medium-6 {
+      float: left;
+      width: 50%;
+    }
+  }
+
+  &--gutter {
+    margin-right: -35px;
+  }
+  &--gutter > div {
+    padding-right: 35px;
+  }
+  /*Begin flexbox to sortout hight issues*/
+  &--flexbox-at-medium {
+    @mixin atMedium {
+      display: flex;
+    }
+    & > div {
+      float: none;
+      display: flex;
+    }
+  }
+  
+}

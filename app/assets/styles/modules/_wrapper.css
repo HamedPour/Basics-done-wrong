@@ -1,14 +1,16 @@
 .wrapper {
   overflow: hidden;
-  max-width: 1236px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   padding-right: 0px;
   padding-left: 0px;
 
   @mixin atMedium {
-    padding-right: 100px;
-    padding-left: 100px;
+
+  }
+  @mixin atLarge {
+
   }
 
 

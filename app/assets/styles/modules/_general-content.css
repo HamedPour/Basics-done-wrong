@@ -1,0 +1,13 @@
+.general-content{
+  p {
+    font-size: .8rem;
+    line-height: 1.45;
+    max-width: 350px;
+
+
+    @mixin atMedium{
+      font-size: .9rem;
+      line-height: 1.65;
+    }
+  }
+}

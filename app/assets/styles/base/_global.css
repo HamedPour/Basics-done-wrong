@@ -9,11 +9,14 @@ img {
   height: auto;
 }
 
-*{
+* {
   box-sizing: border-box;
+  margin: 0;
+
 }
 
 /*make sure to define link colors here universally*/
 a {
   color: $mainFont;
+  text-decoration: none;
 }

@@ -1,0 +1,27 @@
+.headline {
+  font-size: 1.2rem;
+  color: #fff;
+
+  @mixin atMedium {
+    font-size: 1.5rem;
+
+    &--extra-margin-top {
+      margin-top: 50px;
+    }
+  }
+
+
+  &__numbers {
+    display: none;
+
+
+    @mixin atMedium {
+      color: $mainGreen;
+      font-family: sans-serif;
+      display: block;
+      font-size: 5rem;
+      font-weight: 200;
+      text-shadow: 2px 2px #333;
+    }
+  }
+}

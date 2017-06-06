@@ -1,0 +1,20 @@
+body {
+  background-image: url("../../assets/images/background.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /*background-color: rgba($darkGray, 0.3);*/
+}
+
+
+
+.background {
+
+  &--green {
+    background-color: $mainGreen;
+  }
+
+  &--misty {
+    background-color: rgba($mistyGray, 0.5);
+
+  }
+}
