@@ -4,6 +4,11 @@
 
   &__image {
     display: block;
+    opacity: 0.9;
+
+    @mixin atMedium {
+      opacity: 1;
+    }
   }
 
   &__text-content {

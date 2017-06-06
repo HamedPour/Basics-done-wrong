@@ -1,8 +1,8 @@
 .page-section {
-  padding: 1rem 0;
+  /*padding: 1rem 0;*/
 
   @mixin atMedium {
     padding: 1.5rem 0;
   }
-  
+
 }

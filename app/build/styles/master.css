@@ -315,6 +315,18 @@ a {
 
 .prologue__image {
     display: block;
+    opacity: 0.9;
+  }
+
+
+
+@media (min-width: 700px){
+
+
+
+.prologue__image {
+      opacity: 1
+  }
   }
 
 
@@ -414,13 +426,23 @@ body {
   background-image: url("../../assets/images/background.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  /*background-color: rgba($darkGray, 0.3);*/
 }
 
 
 
 .background--green {
-    background-color: #16b07c;
+    background-color: rgba(22,176,124, 0.8);
+  }
+
+
+
+@media (min-width: 530px){
+
+
+
+.background--green {
+      background-color: #16b07c
+  }
   }
 
 
@@ -561,10 +583,7 @@ body {
 
 
 
-.page-section {
-  padding: 1rem 0;
-  
-}
+/*padding: 1rem 0;*/
 
 
 
@@ -574,7 +593,7 @@ body {
 
 .page-section {
     padding: 1.5rem 0
-  
+
 }
   }
 

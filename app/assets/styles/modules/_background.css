@@ -2,7 +2,6 @@ body {
   background-image: url("../../assets/images/background.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  /*background-color: rgba($darkGray, 0.3);*/
 }
 
 
@@ -10,7 +9,11 @@ body {
 .background {
 
   &--green {
-    background-color: $mainGreen;
+    background-color: rgba($mainGreen, 0.8);
+
+    @mixin atSmall {
+      background-color: $mainGreen;
+    }
   }
 
   &--misty {
