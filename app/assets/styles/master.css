@@ -12,3 +12,5 @@ Make sure you NPM postcss IMPORT before or else it wont work*/
 @import "modules/_wrapper";
 @import "modules/_prologue";
 @import "modules/_backgroundimage";
+@import "modules/_site-header";
+@import "modules/_primary-nav";

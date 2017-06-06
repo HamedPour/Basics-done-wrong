@@ -1,8 +1,9 @@
 .prologue {
   position: relative;
+  padding-top: 65px;
 
   &__image {
-    /*display: block;*/
+    display: block;
   }
 
   &__text-content {
