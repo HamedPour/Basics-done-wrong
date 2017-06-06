@@ -15,10 +15,22 @@
   li {
     list-style: none;
     display: inline-block;
+    padding-right: 7px;
+
+    @mixin atMedium {
+      float: left;
+      padding-right: 25px;
+    }
+  }
+
+  li:last-child {
+    padding-right: 0;
   }
 
   a {
     text-decoration: none;
     color: $darkGray;
+    font-weight: bold;
+
   }
 }
