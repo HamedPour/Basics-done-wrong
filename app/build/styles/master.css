@@ -423,10 +423,10 @@ a {
 
 
 body {
-  /*background-image: url("../../assets/images/background.jpg");
+  background-image: url("../../assets/images/background.jpg");
   background-attachment: fixed;
-  background-repeat: no-repeat;*/
-  background-color: rgba(0,0,0, 0.5);
+  background-repeat: no-repeat;
+  /*background-color: rgba(#000, 0.5);*/
 }
 
 
@@ -728,7 +728,7 @@ body {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  padding: 23px 0 23px 0;
+  padding: 15px 0 15px 0;
 }
 
 
@@ -766,24 +766,70 @@ body {
 
 
 .topics-bio {
-    border-bottom: 3px solid #02d58e;
+    border-bottom: 4px solid #02d58e;
 
   }
 
 
 
 .topics-edu {
-    border-bottom: 3px solid #02d58e;
+    border-bottom: 4px solid #02d58e;
   }
 
 
 
 .topics-exp {
-    border-bottom: 3px solid #02d58e;
+    border-bottom: 4px solid #02d58e;
   }
 
 
 
 .topics-travels {
-    border-bottom: 3px solid #02d58e;
+    border-bottom: 4px solid #02d58e;
   }
+
+
+
+.icon--Brain {
+    width: 30px;
+    height: 30px;
+    background-image: url('/build/sprite/css/svg/sprite.css-2a6efa94.svg');
+    background-position: 0 0 ;
+  }
+
+
+
+.icon--compass {
+    width: 30px;
+    height: 30px;
+    background-image: url('/build/sprite/css/svg/sprite.css-2a6efa94.svg');
+    background-position: 100% 0 ;
+  }
+
+
+
+.icon--graduation {
+    width: 30px;
+    height: 30px;
+    background-image: url('/build/sprite/css/svg/sprite.css-2a6efa94.svg');
+    background-position: 0 100% ;
+  }
+
+
+
+.icon--pen {
+    width: 30px;
+    height: 30px;
+    background-image: url('/build/sprite/css/svg/sprite.css-2a6efa94.svg');
+    background-position: 100% 100% ;
+  }
+
+
+
+.icon {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.4rem;
+}
