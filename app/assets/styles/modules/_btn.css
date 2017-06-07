@@ -1,11 +1,18 @@
 .btn {
-  background-color: rgba($darkGray, 0.7);
+  background-color: rgba($darkGray, 0.8);
   text-align: center;
   text-decoration: none;
   cursor: pointer;
   padding: 23px 0 23px 0;
-  border-bottom: 4px solid $btnGreen;
-  z-index: 2;
+
+  &--topics {
+    font-weight: 200;
+
+    @mixin atMedium {
+
+    border-right: 2px solid $mistyGray;
+    }
+  }
 
   &--active {
     background-color: $btnGreen;

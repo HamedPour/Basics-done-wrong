@@ -1,13 +1,19 @@
 .topics {
 
-  h3 {
-    font-size: 0.8rem;
+  font-size: 0.7rem;
 
-    border-right: 2px solid $mistyGray;
-    /*FIX THIS Z-INDEX PROBLEM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-    /*z-index: 1; */
+  &-bio {
+    border-bottom: 3px solid $btnGreen;
+
   }
-
-
+  &-edu {
+    border-bottom: 3px solid $btnGreen;
+  }
+  &-exp {
+    border-bottom: 3px solid $btnGreen;
+  }
+  &-travels {
+    border-bottom: 3px solid $btnGreen;
+  }
 
 }

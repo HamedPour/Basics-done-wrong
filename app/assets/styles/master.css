@@ -21,3 +21,4 @@ Make sure you NPM postcss IMPORT before or else it wont work*/
 @import "modules/_aboutme";
 @import "modules/_btn";
 @import "modules/_topics";
+@import "modules/_icon";
