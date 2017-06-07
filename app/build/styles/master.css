@@ -423,10 +423,10 @@ a {
 
 
 body {
-  background-image: url("../../assets/images/background.jpg");
+  /*background-image: url("../../assets/images/background.jpg");
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  /*background-color: rgba(#000, 0.5);*/
+  background-repeat: no-repeat;*/
+  background-color: rgba(0,0,0, 0.5);
 }
 
 
@@ -790,11 +790,11 @@ body {
 
 
 
-.icon--Brain {
+.icon--brain {
     width: 30px;
     height: 30px;
-    background-image: url('/build/sprite/css/svg/sprite.css-2a6efa94.svg');
-    background-position: 0 0 ;
+    background-image: url('/build/sprite/css/svg/sprite.css-4f0fb35b.svg');
+    background-position: 62.5% 0 ;
   }
 
 
@@ -802,8 +802,8 @@ body {
 .icon--compass {
     width: 30px;
     height: 30px;
-    background-image: url('/build/sprite/css/svg/sprite.css-2a6efa94.svg');
-    background-position: 100% 0 ;
+    background-image: url('/build/sprite/css/svg/sprite.css-4f0fb35b.svg');
+    background-position: 0 100% ;
   }
 
 
@@ -811,8 +811,17 @@ body {
 .icon--graduation {
     width: 30px;
     height: 30px;
-    background-image: url('/build/sprite/css/svg/sprite.css-2a6efa94.svg');
-    background-position: 0 100% ;
+    background-image: url('/build/sprite/css/svg/sprite.css-4f0fb35b.svg');
+    background-position: 37.5% 100% ;
+  }
+
+
+
+.icon--hamedlogo {
+    width: 50px;
+    height: 50px;
+    background-image: url('/build/sprite/css/svg/sprite.css-4f0fb35b.svg');
+    background-position: 0 0 ;
   }
 
 
@@ -820,8 +829,8 @@ body {
 .icon--pen {
     width: 30px;
     height: 30px;
-    background-image: url('/build/sprite/css/svg/sprite.css-2a6efa94.svg');
-    background-position: 100% 100% ;
+    background-image: url('/build/sprite/css/svg/sprite.css-4f0fb35b.svg');
+    background-position: 100% 0 ;
   }
 
 
