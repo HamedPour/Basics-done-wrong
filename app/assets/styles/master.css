@@ -19,3 +19,5 @@ Make sure you NPM postcss IMPORT before or else it wont work*/
 @import "modules/_general-content";
 @import "modules/_headline";
 @import "modules/_aboutme";
+@import "modules/_btn";
+@import "modules/_topics";

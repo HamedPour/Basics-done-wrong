@@ -423,9 +423,10 @@ a {
 
 
 body {
-  background-image: url("../../assets/images/background.jpg");
+  /*background-image: url("../../assets/images/background.jpg");
   background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
+  background-color: rgba(0,0,0, 0.5);
 }
 
 
@@ -448,7 +449,7 @@ body {
 
 
 .background--misty {
-    background-color: rgba(92,90,91, 0.5);
+    background-color: rgba(33,33,33, 0.5);
 
   }
 
@@ -541,6 +542,11 @@ body {
       float: left;
       width: 50%;
     }
+
+    .row__medium-3 {
+      float: left;
+      width: 25%;
+    }
   }
 
 
@@ -580,10 +586,6 @@ body {
       display: -ms-flexbox;
       display: flex;
     }
-
-
-
-/*padding: 1rem 0;*/
 
 
 
@@ -717,4 +719,71 @@ body {
       padding-left: 100px;
       margin-bottom: 20px
   }
+  }
+
+
+
+.btn {
+  background-color: rgba(33,33,33, 0.8);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 23px 0 23px 0;
+}
+
+
+
+.btn--topics {
+    font-weight: 200;
+  }
+
+
+
+@media (min-width: 700px){
+
+
+
+.btn--topics {
+
+    border-right: 2px solid #5c5a5b
+  }
+  }
+
+
+
+.btn--active {
+    background-color: #02d58e;
+  }
+
+
+
+.topics {
+
+  font-size: 0.7rem;
+
+}
+
+
+
+.topics-bio {
+    border-bottom: 3px solid #02d58e;
+
+  }
+
+
+
+.topics-edu {
+    border-bottom: 3px solid #02d58e;
+  }
+
+
+
+.topics-exp {
+    border-bottom: 3px solid #02d58e;
+  }
+
+
+
+.topics-travels {
+    border-bottom: 3px solid #02d58e;
   }

@@ -8,7 +8,15 @@
       float: left;
       width: 50%;
     }
+
+    &__medium-3 {
+      float: left;
+      width: 25%;
+    }
   }
+
+
+
 
   &--gutter {
     margin-right: -35px;
@@ -26,5 +34,5 @@
       display: flex;
     }
   }
-  
+
 }
