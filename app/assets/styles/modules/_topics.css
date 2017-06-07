@@ -3,17 +3,17 @@
   font-size: 0.7rem;
 
   &-bio {
-    border-bottom: 3px solid $btnGreen;
+    border-bottom: 4px solid $btnGreen;
 
   }
   &-edu {
-    border-bottom: 3px solid $btnGreen;
+    border-bottom: 4px solid $btnGreen;
   }
   &-exp {
-    border-bottom: 3px solid $btnGreen;
+    border-bottom: 4px solid $btnGreen;
   }
   &-travels {
-    border-bottom: 3px solid $btnGreen;
+    border-bottom: 4px solid $btnGreen;
   }
 
 }

@@ -1,0 +1,24 @@
+  .icon--Brain {
+    width: 30px;
+    height: 30px;
+    background-image: url('/build/sprite/css/svg/sprite.css-2a6efa94.svg');
+    background-position: 0 0 ;
+  }
+  .icon--compass {
+    width: 30px;
+    height: 30px;
+    background-image: url('/build/sprite/css/svg/sprite.css-2a6efa94.svg');
+    background-position: 100% 0 ;
+  }
+  .icon--graduation {
+    width: 30px;
+    height: 30px;
+    background-image: url('/build/sprite/css/svg/sprite.css-2a6efa94.svg');
+    background-position: 0 100% ;
+  }
+  .icon--pen {
+    width: 30px;
+    height: 30px;
+    background-image: url('/build/sprite/css/svg/sprite.css-2a6efa94.svg');
+    background-position: 100% 100% ;
+  }
