@@ -791,10 +791,20 @@ body {
 
 
 
+/* _sprite.css is automatically generated with GULP at gulp/templates/sprites.css
+Edit it there if you must please*/
+
+
+
+.icon {
+    background-image: url('/assets/images/sprites/sprite-15d33797.svg');
+  }
+
+
+
 .icon--brain {
     width: 30px;
     height: 30px;
-    background-image: url('/build/sprite/css/svg/sprite.css-15d33797.svg');
     background-position: 0 50% ;
   }
 
@@ -803,7 +813,6 @@ body {
 .icon--compass {
     width: 30px;
     height: 30px;
-    background-image: url('/build/sprite/css/svg/sprite.css-15d33797.svg');
     background-position: 50% 50% ;
   }
 
@@ -812,7 +821,6 @@ body {
 .icon--graduation {
     width: 30px;
     height: 30px;
-    background-image: url('/build/sprite/css/svg/sprite.css-15d33797.svg');
     background-position: 100% 50% ;
   }
 
@@ -821,7 +829,6 @@ body {
 .icon--hamedlogo {
     width: 90px;
     height: 30px;
-    background-image: url('/build/sprite/css/svg/sprite.css-15d33797.svg');
     background-position: 0 0 ;
   }
 
@@ -830,7 +837,6 @@ body {
 .icon--pen {
     width: 30px;
     height: 30px;
-    background-image: url('/build/sprite/css/svg/sprite.css-15d33797.svg');
     background-position: 0 100% ;
   }
 
