@@ -1,0 +1,79 @@
+.my {
+  background-color: rgba($darkGray, 0.8);
+  height: 550px;;
+  border-bottom: 3px solid $mistyGray;
+
+  @mixin atMedium{
+    height: 500px;
+  }
+
+  &__image {
+
+    display: none;
+
+    @mixin atMedium {
+
+      display: block;
+      position: relative;
+      margin-left: 40px;
+      width: 46%;
+      margin-top: 40px;
+      height: auto;
+      float: left;
+    }
+  }
+
+  &__headline {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1.9rem;
+    position: relative;
+
+    @mixin atSmall {
+    padding-top: 40px;
+    text-align: center;
+
+  }
+
+    @mixin atMedium {
+      text-align: left;
+      /*top: 40px;*/
+      left: 60px;
+    }
+  }
+
+  &__para {
+    max-width: 250px;
+    line-height: 1.4rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+
+    @mixin atMedium {
+      text-align: left;
+      position: relative;
+      line-height: 1.6rem;
+      float: left;
+      left: 60px;
+    }
+  }
+
+  hr{
+    display: none;
+
+    @mixin atMedium{
+      display: block;
+      margin-top: 30px;
+    }
+
+    @mixin atMedium{
+      width: 130px;
+      border: 1px solid $mainGreen;
+    }
+  }
+
+  &--is-hidden{
+    display: none;
+  }
+
+}

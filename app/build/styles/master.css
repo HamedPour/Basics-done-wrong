@@ -437,7 +437,7 @@ body {
 
 
 
-@media (min-width: 530px){
+@media (min-width: 355px){
 
 
 
@@ -851,3 +851,144 @@ Edit it there if you must please*/
 
   
 }
+
+
+
+.my {
+  background-color: rgba(33,33,33, 0.8);
+  height: 550px;;
+  border-bottom: 3px solid #5c5a5b;
+
+}
+
+
+
+@media (min-width: 700px){
+
+
+
+.my {
+    height: 500px
+
+}
+  }
+
+
+
+.my__image {
+
+    display: none;
+  }
+
+
+
+@media (min-width: 700px){
+
+
+
+.my__image {
+
+      display: block;
+      position: relative;
+      margin-left: 40px;
+      width: 46%;
+      margin-top: 40px;
+      height: auto;
+      float: left
+  }
+  }
+
+
+
+.my__headline {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1.9rem;
+    position: relative;
+  }
+
+
+
+@media (min-width: 355px){
+
+
+
+.my__headline {
+    padding-top: 40px;
+    text-align: center
+  }
+  }
+
+
+
+@media (min-width: 700px){
+
+
+
+.my__headline {
+      text-align: left;
+      /*top: 40px;*/
+      left: 60px
+  }
+  }
+
+
+
+.my__para {
+    max-width: 250px;
+    line-height: 1.4rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+  }
+
+
+
+@media (min-width: 700px){
+
+
+
+.my__para {
+      text-align: left;
+      position: relative;
+      line-height: 1.6rem;
+      float: left;
+      left: 60px
+  }
+  }
+
+
+
+.my hr{
+    display: none;
+  }
+
+
+
+@media (min-width: 700px){
+
+
+
+.my hr{
+      display: block;
+      margin-top: 30px
+  }
+  }
+
+
+
+@media (min-width: 700px){
+
+
+
+.my hr{
+      width: 130px;
+      border: 1px solid #16b07c
+  }
+  }
+
+
+
+.my--is-hidden{
+    display: none;
+  }
