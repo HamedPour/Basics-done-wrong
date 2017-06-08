@@ -1,6 +1,6 @@
 .prologue {
   position: relative;
-  padding-top: 65px;
+  padding-top: 55px;
 
   &__image {
     display: block;

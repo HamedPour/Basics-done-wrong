@@ -306,7 +306,7 @@ a {
 
 .prologue {
   position: relative;
-  padding-top: 65px;
+  padding-top: 55px;
 
 
 }
@@ -458,16 +458,17 @@ body {
 .site-header {
   width: 100%;
   position: absolute;
-  top: 15px;
+  top: 0px;
   z-index: 50;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 
 
 .site-header__logo {
     position: absolute;
-    top: -5px;
+    top: 15px;
+    
 
  }
 
@@ -793,8 +794,8 @@ body {
 .icon--brain {
     width: 30px;
     height: 30px;
-    background-image: url('/build/sprite/css/svg/sprite.css-4f0fb35b.svg');
-    background-position: 62.5% 0 ;
+    background-image: url('/build/sprite/css/svg/sprite.css-15d33797.svg');
+    background-position: 0 50% ;
   }
 
 
@@ -802,8 +803,8 @@ body {
 .icon--compass {
     width: 30px;
     height: 30px;
-    background-image: url('/build/sprite/css/svg/sprite.css-4f0fb35b.svg');
-    background-position: 0 100% ;
+    background-image: url('/build/sprite/css/svg/sprite.css-15d33797.svg');
+    background-position: 50% 50% ;
   }
 
 
@@ -811,16 +812,16 @@ body {
 .icon--graduation {
     width: 30px;
     height: 30px;
-    background-image: url('/build/sprite/css/svg/sprite.css-4f0fb35b.svg');
-    background-position: 37.5% 100% ;
+    background-image: url('/build/sprite/css/svg/sprite.css-15d33797.svg');
+    background-position: 100% 50% ;
   }
 
 
 
 .icon--hamedlogo {
-    width: 50px;
-    height: 50px;
-    background-image: url('/build/sprite/css/svg/sprite.css-4f0fb35b.svg');
+    width: 90px;
+    height: 30px;
+    background-image: url('/build/sprite/css/svg/sprite.css-15d33797.svg');
     background-position: 0 0 ;
   }
 
@@ -829,8 +830,8 @@ body {
 .icon--pen {
     width: 30px;
     height: 30px;
-    background-image: url('/build/sprite/css/svg/sprite.css-4f0fb35b.svg');
-    background-position: 100% 0 ;
+    background-image: url('/build/sprite/css/svg/sprite.css-15d33797.svg');
+    background-position: 0 100% ;
   }
 
 
@@ -841,4 +842,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0.4rem;
+
+  
 }
