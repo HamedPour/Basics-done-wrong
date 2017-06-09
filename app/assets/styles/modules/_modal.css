@@ -1,0 +1,49 @@
+.modal {
+   position: fixed;
+   z-index: 100;
+   color: #000;
+   background-color: rgba(#fff, 0.90);
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+
+   /*NEED TO COME BACK AND WRITE JS CODE FOR THIS*/
+   visibility: hidden;
+   
+
+   &--headline{
+     font-family: 'El Messiri', sans-serif;
+     font-size: 3.3rem;
+     text-align: center;
+     padding-top: 100px;
+
+   }
+
+   &--para {
+     font-family: 'El Messiri', sans-serif;
+     line-height: 2rem;
+     max-width: 400px;
+     font-size: 1.4rem;
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+     padding-top: 30px;
+   }
+
+   &__close{
+     position: absolute;
+     top: 30px;
+     right: 45px;
+     font-size: 2rem;
+     font-weight: bolder;
+     transform: scaleX(1.1);
+
+     &:hover{
+       cursor: pointer;
+       color: #EEBF00;
+     }
+   }
+
+
+}

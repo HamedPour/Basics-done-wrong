@@ -4,25 +4,31 @@ Edit it there if you must please*/
 
 
   .icon {
-    background-image: url('/assets/images/sprites/sprite-15d33797.svg');
+    background-image: url('/assets/images/sprites/sprite-33d7c07e.svg');
   }
 
   .icon--brain {
     width: 30px;
     height: 30px;
-    background-position: 0 50% ;
+    background-position: 65.21739130434783% 46.42857142857143% ;
   }
 
   .icon--compass {
     width: 30px;
     height: 30px;
-    background-position: 50% 50% ;
+    background-position: 34.78260869565217% 35.714285714285715% ;
+  }
+
+  .icon--facebook {
+    width: 48px;
+    height: 42px;
+    background-position: 0 41.666666666666664% ;
   }
 
   .icon--graduation {
     width: 30px;
     height: 30px;
-    background-position: 100% 50% ;
+    background-position: 69.56521739130434% 85.71428571428571% ;
   }
 
   .icon--hamedlogo {
@@ -31,8 +37,26 @@ Edit it there if you must please*/
     background-position: 0 0 ;
   }
 
+  .icon--mail {
+    width: 48px;
+    height: 39px;
+    background-position: 75% 0 ;
+  }
+
   .icon--pen {
     width: 30px;
     height: 30px;
+    background-position: 100% 0 ;
+  }
+
+  .icon--twitter {
+    width: 48px;
+    height: 42px;
     background-position: 0 100% ;
+  }
+
+  .icon--whatsapp {
+    width: 48px;
+    height: 42px;
+    background-position: 40% 100% ;
   }

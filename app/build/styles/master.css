@@ -761,7 +761,7 @@ body {
 .btn--footer {
     display: inline-block;
     margin-top: 4px;
-    background-color: #02d58e;
+    background-color: #16b07c;
     color: #000;
   }
 
@@ -819,7 +819,7 @@ Edit it there if you must please*/
 
 
 .icon {
-    background-image: url('/assets/images/sprites/sprite-15d33797.svg');
+    background-image: url('/assets/images/sprites/sprite-33d7c07e.svg');
   }
 
 
@@ -827,7 +827,7 @@ Edit it there if you must please*/
 .icon--brain {
     width: 30px;
     height: 30px;
-    background-position: 0 50% ;
+    background-position: 65.21739130434783% 46.42857142857143% ;
   }
 
 
@@ -835,7 +835,15 @@ Edit it there if you must please*/
 .icon--compass {
     width: 30px;
     height: 30px;
-    background-position: 50% 50% ;
+    background-position: 34.78260869565217% 35.714285714285715% ;
+  }
+
+
+
+.icon--facebook {
+    width: 48px;
+    height: 42px;
+    background-position: 0 41.666666666666664% ;
   }
 
 
@@ -843,7 +851,7 @@ Edit it there if you must please*/
 .icon--graduation {
     width: 30px;
     height: 30px;
-    background-position: 100% 50% ;
+    background-position: 69.56521739130434% 85.71428571428571% ;
   }
 
 
@@ -856,10 +864,34 @@ Edit it there if you must please*/
 
 
 
+.icon--mail {
+    width: 48px;
+    height: 39px;
+    background-position: 75% 0 ;
+  }
+
+
+
 .icon--pen {
     width: 30px;
     height: 30px;
+    background-position: 100% 0 ;
+  }
+
+
+
+.icon--twitter {
+    width: 48px;
+    height: 42px;
     background-position: 0 100% ;
+  }
+
+
+
+.icon--whatsapp {
+    width: 48px;
+    height: 42px;
+    background-position: 40% 100% ;
   }
 
 
@@ -1035,3 +1067,82 @@ Edit it there if you must please*/
 
 }
   }
+
+
+
+.modal {
+   position: fixed;
+   z-index: 100;
+   color: #000;
+   background-color: rgba(255,255,255, 0.90);
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+
+   /*NEED TO COME BACK AND WRITE JS CODE FOR THIS*/
+   visibility: hidden;
+
+
+}
+
+
+
+.modal--headline{
+     font-family: 'El Messiri', sans-serif;
+     font-size: 3.3rem;
+     text-align: center;
+     padding-top: 100px;
+
+   }
+
+
+
+.modal--para {
+     font-family: 'El Messiri', sans-serif;
+     line-height: 2rem;
+     max-width: 400px;
+     font-size: 1.4rem;
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+     padding-top: 30px;
+   }
+
+
+
+.modal__close{
+     position: absolute;
+     top: 30px;
+     right: 45px;
+     font-size: 2rem;
+     font-weight: bolder;
+     -webkit-transform: scaleX(1.1);
+             transform: scaleX(1.1);
+   }
+
+
+
+.modal__close:hover{
+       cursor: pointer;
+       color: #EEBF00;
+     }
+
+
+
+.social-icons {
+text-align: center;
+}
+
+
+
+.social-icons__icon{
+    display: inline-block;
+    margin: 30px;
+  }
+
+
+
+.social-icons__icon .icon {
+      display: block;
+    }
