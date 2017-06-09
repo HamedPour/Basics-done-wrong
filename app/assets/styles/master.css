@@ -25,3 +25,5 @@ Make sure you NPM postcss IMPORT before or else it wont work*/
 @import "modules/_icon";
 @import "modules/_my";
 @import "modules/_footer";
+@import "modules/_modal";
+@import "modules/_social-icons";

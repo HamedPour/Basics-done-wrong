@@ -22,7 +22,7 @@
   &--footer {
     display: inline-block;
     margin-top: 4px;
-    background-color: $btnGreen;
+    background-color: $mainGreen;
     color: #000;
 
 
