@@ -24,3 +24,4 @@ Make sure you NPM postcss IMPORT before or else it wont work*/
 @import "modules/_sprite";
 @import "modules/_icon";
 @import "modules/_my";
+@import "modules/_footer";

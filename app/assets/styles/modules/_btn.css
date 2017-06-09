@@ -3,7 +3,7 @@
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  padding: 15px 0 15px 0;
+  padding: 10px 10px 10px 10px;
 
 
   &--topics {
@@ -17,5 +17,19 @@
 
   &--active {
     background-color: $btnGreen;
+  }
+
+  &--footer {
+    display: inline-block;
+    margin-top: 4px;
+    background-color: $btnGreen;
+    color: #000;
+
+
+      @mixin atMedium {
+        margin-top: 2px;
+        display: inline-block;
+        margin-left: 30px;
+      }
   }
 }
