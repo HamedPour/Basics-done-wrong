@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10409,8 +10409,8 @@ var Modal = function () {
     this.modal = (0, _jquery2.default)(".modal");
     this.closeModalButton = (0, _jquery2.default)(".modal__close");
     this.events();
-    this.openModal();
-    this.closeModal();
+    // this.openModal();
+    // this.closeModal();
   }
 
   //Event handler method
@@ -10467,6 +10467,92 @@ exports.default = Modal;
 "use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var MySection = function () {
+  function MySection() {
+    _classCallCheck(this, MySection);
+
+    this.bioButton = (0, _jquery2.default)("#bioButton");
+    this.eduButton = (0, _jquery2.default)("#eduButton");
+    this.expButton = (0, _jquery2.default)("#expButton");
+    this.travelButton = (0, _jquery2.default)("#travelButton");
+    // =================================================================
+    this.bioSection = (0, _jquery2.default)("#my-bio");
+    this.eduSection = (0, _jquery2.default)("#my-edu");
+    this.expSection = (0, _jquery2.default)("#my-exp");
+    this.travelSection = (0, _jquery2.default)("#my-travels");
+
+    // =================================================================
+
+    this.events();
+    this.toggleVisiableBio();
+    // this.toggleVisiableEdu();
+    // this.toggleVisiableExp();
+    // this.toggleVisiableTravel();
+  }
+
+  _createClass(MySection, [{
+    key: "events",
+    value: function events() {
+      this.bioButton.click(this.toggleVisiableBio.bind(this));
+      this.eduButton.click(this.toggleVisiableEdu.bind(this));
+      this.expButton.click(this.toggleVisiableExp.bind(this));
+      this.travelButton.click(this.toggleVisiableTravel.bind(this));
+    }
+
+    // My education-section visiablity toggle
+
+  }, {
+    key: "toggleVisiableBio",
+    value: function toggleVisiableBio() {
+      this.bioSection.toggleClass("my--is-visible");
+      this.bioButton.toggleClass("btn--active");
+    }
+  }, {
+    key: "toggleVisiableEdu",
+    value: function toggleVisiableEdu() {
+      this.eduSection.toggleClass("my--is-visible");
+      this.eduButton.toggleClass("btn--active");
+    }
+  }, {
+    key: "toggleVisiableExp",
+    value: function toggleVisiableExp() {
+      this.expSection.toggleClass("my--is-visible");
+      this.expButton.toggleClass("btn--active");
+    }
+  }, {
+    key: "toggleVisiableTravel",
+    value: function toggleVisiableTravel() {
+      this.travelSection.toggleClass("my--is-visible");
+      this.travelButton.toggleClass("btn--active");
+    }
+  }]);
+
+  return MySection;
+}();
+
+exports.default = MySection;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 var _Modal = __webpack_require__(2);
 
 var _Modal2 = _interopRequireDefault(_Modal);
@@ -10475,10 +10561,15 @@ var _MobileMenu = __webpack_require__(1);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
+var _MySection = __webpack_require__(3);
+
+var _MySection2 = _interopRequireDefault(_MySection);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var modal = new _Modal2.default();
 var mobileMenu = new _MobileMenu2.default();
+var mySection = new _MySection2.default();
 
 /***/ })
 /******/ ]);
