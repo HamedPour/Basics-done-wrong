@@ -2,15 +2,23 @@
    position: fixed;
    z-index: 100;
    color: #000;
-   background-color: rgba(#fff, 0.90);
+   background-color: rgba(#fff, 0.95);
    top: 0;
    bottom: 0;
    left: 0;
    right: 0;
 
-   /*NEED TO COME BACK AND WRITE JS CODE FOR THIS*/
+   /*The modal is hidden by default and the line below it will allow it to toggel
+   to visible with jquery*/
    visibility: hidden;
-   
+   transform: scale(1.2);
+   transition: all .4s ease-out;
+   /*This line is set of the MODAL.JS file to enable visibility functions*/
+   &--is-visible{
+     visibility: visible;
+     transform: scale(1);
+   }
+
 
    &--headline{
      font-family: 'El Messiri', sans-serif;
