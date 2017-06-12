@@ -9,12 +9,13 @@ class MobileMenu {
 
 // Events handling
 events(){
-  this.mobileMenu.click(this.openMenu.bind(this);
+  this.mobileMenu.click(this.toggleMenu.bind(this));
 }
 
 // Open the mobile menu
-openMenu(){
+toggleMenu(){
   this.menuContent.toggleClass("site-header__menu-content--is-visible");
+  this.mobileMenu.toggleClass("site-header__mobile-menu--close-x");
 }
 
 

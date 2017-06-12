@@ -1,6 +1,6 @@
 import Modal from "./modules/Modal";
-// import MobileMenu from "./modules/MobileMenu"
+import MobileMenu from "./modules/MobileMenu"
 
 
 var modal = new Modal();
-// var mobileMenu = new MobileMenu();
+var mobileMenu = new MobileMenu();
