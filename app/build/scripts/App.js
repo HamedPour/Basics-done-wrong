@@ -10409,6 +10409,8 @@ var Modal = function () {
     this.modal = (0, _jquery2.default)(".modal");
     this.closeModalButton = (0, _jquery2.default)(".modal__close");
     this.events();
+    this.openModal();
+    this.closeModal();
   }
 
   //Event handler method
@@ -10422,6 +10424,7 @@ var Modal = function () {
       //clicking on the CLOSE modal "X"
       this.closeModalButton.click(this.closeModal.bind(this));
       //pushing the keyboard esc key
+      (0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
     }
 
     //Method to open the modal
@@ -10439,6 +10442,16 @@ var Modal = function () {
     key: "closeModal",
     value: function closeModal() {
       this.modal.removeClass("modal--is-visible");
+    }
+
+    // Handling Keybaord pressing to escape
+
+  }, {
+    key: "keyPressHandler",
+    value: function keyPressHandler(e) {
+      if (e.keyCode == 27) {
+        this.closeModal();
+      }
     }
   }]);
 

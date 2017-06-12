@@ -7,6 +7,8 @@ class Modal {
     this.modal = $(".modal");
     this.closeModalButton = $(".modal__close");
     this.events();
+    this.openModal();
+    this.closeModal();
   }
 
   //Event handler method
@@ -16,6 +18,7 @@ class Modal {
     //clicking on the CLOSE modal "X"
     this.closeModalButton.click(this.closeModal.bind(this));
     //pushing the keyboard esc key
+    $(document).keyup(this.keyPressHandler.bind(this));
   }
 
   //Method to open the modal
@@ -30,7 +33,12 @@ class Modal {
     this.modal.removeClass("modal--is-visible");
   }
 
-
+  // Handling Keybaord pressing to escape
+  keyPressHandler(e){
+    if (e.keyCode ==27) {
+      this.closeModal();
+    }
+  }
 
 }
 

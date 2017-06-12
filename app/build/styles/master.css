@@ -426,6 +426,7 @@ a {
 body {
   background-image: url("../../assets/images/background.jpg");
   background-attachment: fixed;
+  background-size: cover;
   background-repeat: no-repeat;
   /*background-color: rgba(#000, 0.5);*/
 }
