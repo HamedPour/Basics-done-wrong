@@ -2,6 +2,7 @@ body {
   font-family: 'Raleway', sans-serif;
   color: $mainFont;
   margin: 0;
+  min-width: 345px;
 }
 
 img {

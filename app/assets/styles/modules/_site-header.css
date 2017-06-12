@@ -3,12 +3,57 @@
   position: absolute;
   top: 0px;
   z-index: 50;
-  padding: 20px 0;
+
 
   &__logo {
     position: absolute;
     top: 15px;
-    
+ }
 
+ &__mobile-menu {
+  z-index: 20;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: $mainGreen;
+
+
+
+  @mixin atMedium {
+    display: none;
+  }
+ }
+
+ &__menu-content{
+   position: absolute;
+   margin-left: auto;
+   margin-right: auto;
+   left: 0;
+   right: 0;
+   font-size:0.9rem;
+   text-align: center;
+   background-color: rgba($mistyGray, 1);
+   padding: 30px;
+   visibility: hidden;
+
+
+   a:hover {
+     color: $btnGreen;
+   }
+
+   &--is-visible {
+     visibility: visible;
+
+   }
+
+   @mixin atMedium {
+     font-size: 1.1rem;
+     position: static;
+     background-color: inherit;
+     padding: 20px 0;
+     visibility: visible;
+   }
  }
 }

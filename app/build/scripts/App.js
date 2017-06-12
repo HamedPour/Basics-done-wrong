@@ -146,7 +146,11 @@ var _Modal2 = _interopRequireDefault(_Modal);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// import MobileMenu from "./modules/MobileMenu"
+
+
 var modal = new _Modal2.default();
+// var mobileMenu = new MobileMenu();
 
 /***/ }),
 /* 2 */
