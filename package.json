@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/HamedPour/myWebsite#readme",
   "dependencies": {
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "waypoints": "^4.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.1",
