@@ -962,7 +962,7 @@ Edit it there if you must please*/
 
 
 .icon {
-    background-image: url('/assets/images/sprites/sprite-d469aa04.svg');
+    background-image: url('/assets/images/sprites/sprite-32044dab.svg');
   }
 
 
@@ -970,7 +970,15 @@ Edit it there if you must please*/
 .icon--brain {
     width: 30px;
     height: 30px;
-    background-position: 65.21739130434783% 46.42857142857143% ;
+    background-position: 34.78260869565217% 35.714285714285715% ;
+  }
+
+
+
+.icon--coding {
+    width: 40px;
+    height: 30px;
+    background-position: 70.3125% 46.42857142857143% ;
   }
 
 
@@ -978,7 +986,7 @@ Edit it there if you must please*/
 .icon--compass {
     width: 30px;
     height: 30px;
-    background-position: 34.78260869565217% 35.714285714285715% ;
+    background-position: 69.56521739130434% 85.71428571428571% ;
   }
 
 
@@ -994,7 +1002,7 @@ Edit it there if you must please*/
 .icon--graduation {
     width: 30px;
     height: 30px;
-    background-position: 69.56521739130434% 85.71428571428571% ;
+    background-position: 100% 0 ;
   }
 
 
@@ -1018,7 +1026,7 @@ Edit it there if you must please*/
 .icon--pen {
     width: 30px;
     height: 30px;
-    background-position: 100% 0 ;
+    background-position: 100% 35.714285714285715% ;
   }
 
 
@@ -1095,6 +1103,12 @@ Edit it there if you must please*/
       float: left
   }
   }
+
+
+
+.my__image-lower {
+      margin-top: 80px;
+    }
 
 
 
@@ -1188,7 +1202,7 @@ Edit it there if you must please*/
 
 
 .my--is-visible {
-    
+
     display: block;
 
   }
