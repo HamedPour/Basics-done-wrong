@@ -10513,7 +10513,7 @@ var MySection = function () {
       this.travelButton.click(this.toggleVisiableTravel.bind(this));
     }
 
-    // My education-section visiablity toggle
+    // My-Section visiablity toggle
 
   }, {
     key: "toggleVisiableBio",
