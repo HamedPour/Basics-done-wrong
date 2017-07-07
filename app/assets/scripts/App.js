@@ -10,5 +10,5 @@ var mobileMenu = new MobileMenu();
 var mySection = new MySection();
 
 new RevealOnScroll($(".topics"), "90%");
-new RevealOnScroll($(".my"), "70%");
+new RevealOnScroll($(".my"), "85%");
 new RevealOnScroll($(".footer"), "95%");
