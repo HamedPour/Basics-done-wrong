@@ -1,10 +1,13 @@
 const path = require('path');
 
 module.exports = {
-  entry: "./app/assets/scripts/App.js",
+  entry: {
+    App: "./app/assets/scripts/App.js",
+    Vendor: "./app/assets/scripts/Vendor.js"
+  },
   output: {
     path: path.resolve(__dirname, "./app/build/scripts"),
-    filename: "App.js"
+    filename: "[name].js" //[name] keeps the final name dynamtic so you dont have to worry
   },
   module: {
     loaders: [
