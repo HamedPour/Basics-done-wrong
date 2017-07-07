@@ -340,7 +340,7 @@ a {
     left: 0;
     width: 50%;
     max-width: 200px;
-    padding-left: 20px;
+    padding-left: 40px;
   }
 
 
@@ -350,8 +350,8 @@ a {
 
 
 .prologue__text-content {
-      max-width: 400;
-      padding-left: 25px;
+      max-width: 450;
+      padding-left: 30px;
       left: 4rem
   }
   }
