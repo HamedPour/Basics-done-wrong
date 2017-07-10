@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10563,7 +10563,7 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _noframework = __webpack_require__(9);
+var _noframework = __webpack_require__(10);
 
 var _noframework2 = _interopRequireDefault(_noframework);
 
@@ -10612,7 +10612,8 @@ exports.default = RevealOnScroll;
 /***/ }),
 /* 5 */,
 /* 6 */,
-/* 7 */
+/* 7 */,
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10649,8 +10650,8 @@ new _RevealOnScroll2.default((0, _jquery2.default)(".my"), "85%");
 new _RevealOnScroll2.default((0, _jquery2.default)(".footer"), "95%");
 
 /***/ }),
-/* 8 */,
-/* 9 */
+/* 9 */,
+/* 10 */
 /***/ (function(module, exports) {
 
 /*!

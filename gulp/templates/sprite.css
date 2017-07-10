@@ -6,7 +6,13 @@ Edit it there if you must please*/
 {{#shapes}}
   {{#first}}
   .icon {
-    background-image: url('/assets/images/sprites/{{{sprite}}}');
+    background-image:
+    url('/assets/images/sprites/{{{sprite}}}');
+  }
+
+  .no-svg .icon {
+    background-image:
+    url('/assets/images/sprites/{{#replaceSvgWithPng}}{{{sprite}}}{{/replaceSvgWithPng}}');
   }
   {{/first}}
 

@@ -4,7 +4,13 @@ Edit it there if you must please*/
 
 
   .icon {
-    background-image: url('/assets/images/sprites/sprite-32044dab.svg');
+    background-image:
+    url('/assets/images/sprites/sprite-32044dab.svg');
+  }
+
+  .no-svg .icon {
+    background-image:
+    url('/assets/images/sprites/sprite-32044dab.png');
   }
 
   .icon--brain {
