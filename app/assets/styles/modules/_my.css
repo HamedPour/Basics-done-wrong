@@ -19,7 +19,8 @@
     display: none;
 
     @mixin atMedium {
-
+      overflow: hidden;
+      border-radius: 20px;
       display: block;
       position: relative;
       margin-left: 40px;
@@ -90,4 +91,12 @@
 
   }
 
+}
+/* the class "mobileSlides" is used to disable the image since I decided that
+at this time I would opt-out images on smallscreens*/
+.mobileSlides{
+  display: none;
+  @mixin atLarge{
+    display: block;
+  }
 }
