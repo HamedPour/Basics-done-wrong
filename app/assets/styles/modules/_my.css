@@ -59,7 +59,7 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 40px;
+    padding-top: 35px;
 
     @mixin atMedium {
       text-align: left;
