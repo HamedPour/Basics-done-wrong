@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10334,6 +10334,82 @@ return jQuery;
 
 
 Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Carousel(containerID) {
+	this.container = document.getElementById(containerID) || document.body;
+	this.slides = this.container.querySelectorAll('.carousel');
+	this.total = this.slides.length - 1;
+	this.current = 0;
+
+	// start on slide 1
+	this.slide(this.current);
+}
+// NEXT
+Carousel.prototype.next = function (interval) {
+	this.current === this.total ? this.current = 0 : this.current += 1;
+
+	this.stop();
+	this.slide(this.current);
+
+	if (typeof interval === 'number' && interval % 1 === 0) {
+		var context = this;
+		this.run = setTimeout(function () {
+			context.next(interval);
+		}, interval);
+	}
+};
+// PREVIOUS
+Carousel.prototype.prev = function (interval) {
+	this.current === 0 ? this.current = this.total : this.current -= 1;
+
+	this.stop();
+	this.slide(this.current);
+
+	if (typeof interval === 'number' && interval % 1 === 0) {
+		var context = this;
+		this.run = setTimeout(function () {
+			context.prev(interval);
+		}, interval);
+	}
+};
+// STOP PLAYING
+Carousel.prototype.stop = function () {
+	clearTimeout(this.run);
+};
+// SELECT SLIDE
+Carousel.prototype.slide = function (index) {
+	if (index >= 0 && index <= this.total) {
+		this.stop();
+		for (var s = 0; s <= this.total; s++) {
+			if (s === index) {
+				this.slides[s].style.display = "inline-block";
+			} else {
+				this.slides[s].style.display = 'none';
+			}
+		}
+	} else {
+		alert("Index " + index + " doesn't exist. Available : 0 - " + this.total);
+	}
+};
+
+exports.default = Carousel;
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -10381,7 +10457,7 @@ var MobileMenu = function () {
 exports.default = MobileMenu;
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10461,7 +10537,7 @@ var Modal = function () {
 exports.default = Modal;
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10547,7 +10623,7 @@ var MySection = function () {
 exports.default = MySection;
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10563,7 +10639,7 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _noframework = __webpack_require__(10);
+var _noframework = __webpack_require__(11);
 
 var _noframework2 = _interopRequireDefault(_noframework);
 
@@ -10610,30 +10686,34 @@ var RevealOnScroll = function () {
 exports.default = RevealOnScroll;
 
 /***/ }),
-/* 5 */,
 /* 6 */,
 /* 7 */,
-/* 8 */
+/* 8 */,
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _Modal = __webpack_require__(2);
+var _Modal = __webpack_require__(3);
 
 var _Modal2 = _interopRequireDefault(_Modal);
 
-var _MobileMenu = __webpack_require__(1);
+var _MobileMenu = __webpack_require__(2);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
-var _MySection = __webpack_require__(3);
+var _MySection = __webpack_require__(4);
 
 var _MySection2 = _interopRequireDefault(_MySection);
 
-var _RevealOnScroll = __webpack_require__(4);
+var _RevealOnScroll = __webpack_require__(5);
 
 var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
+
+var _Carousel = __webpack_require__(1);
+
+var _Carousel2 = _interopRequireDefault(_Carousel);
 
 var _jquery = __webpack_require__(0);
 
@@ -10645,13 +10725,24 @@ var modal = new _Modal2.default();
 var mobileMenu = new _MobileMenu2.default();
 var mySection = new _MySection2.default();
 
+// =============================================================================
 new _RevealOnScroll2.default((0, _jquery2.default)(".topics"), "90%");
 new _RevealOnScroll2.default((0, _jquery2.default)(".my"), "85%");
 new _RevealOnScroll2.default((0, _jquery2.default)(".footer"), "95%");
 
+// =============================================================================
+var mySlidesBio = new _Carousel2.default("mySlidesBio");
+var mySlidesEdu = new _Carousel2.default("mySlidesEdu");
+var mySlidesExp = new _Carousel2.default("mySlidesExp");
+var mySlidesTravel = new _Carousel2.default("mySlidesTravel");
+mySlidesBio.next(6000);
+mySlidesEdu.next(7500);
+mySlidesExp.next(8800);
+mySlidesTravel.next(10000);
+
 /***/ }),
-/* 9 */,
-/* 10 */
+/* 10 */,
+/* 11 */
 /***/ (function(module, exports) {
 
 /*!
