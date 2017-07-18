@@ -17,8 +17,9 @@
   &__image {
 
     display: none;
+    visibility: hidden;
 
-    @mixin atMedium {
+    @mixin atLarge{
       overflow: hidden;
       border-radius: 20px;
       display: block;
@@ -28,6 +29,7 @@
       margin-top: 40px;
       height: auto;
       float: left;
+      visibility: visible;
     }
 
     &-lower {
@@ -47,6 +49,12 @@
   }
 
     @mixin atMedium {
+      text-align: center;
+      hr {
+        visibility: hidden;
+      }
+    }
+    @mixin atLarge {
       text-align: left;
       /*top: 40px;*/
       left: 60px;
@@ -62,6 +70,12 @@
     padding-top: 35px;
 
     @mixin atMedium {
+      position: relative;
+      line-height: 1.6rem;
+      max-width: 400px;
+    }
+    @mixin atLarge {
+      max-width: 250px;
       text-align: left;
       position: relative;
       line-height: 1.6rem;
