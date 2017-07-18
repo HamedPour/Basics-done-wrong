@@ -52,6 +52,6 @@
     "postcss-nested": "^2.0.2",
     "postcss-normalize": "^3.0.0",
     "postcss-simple-vars": "^4.0.0",
-    "webpack": "^2.6.1"
+    "webpack": "^2.7.0"
   }
 }
