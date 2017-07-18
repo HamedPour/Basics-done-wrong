@@ -1099,11 +1099,12 @@ Edit it there if you must please*/
 .my__image {
 
     display: none;
+    visibility: hidden;
   }
 
 
 
-@media (min-width: 600px){
+@media (min-width: 800px){
 
 
 
@@ -1116,7 +1117,8 @@ Edit it there if you must please*/
       width: 46%;
       margin-top: 40px;
       height: auto;
-      float: left
+      float: left;
+      visibility: visible
   }
   }
 
@@ -1153,6 +1155,20 @@ Edit it there if you must please*/
 
 
 .my__headline {
+      text-align: center
+  }
+      .my__headline hr {
+        visibility: hidden;
+      }
+  }
+
+
+
+@media (min-width: 800px){
+
+
+
+.my__headline {
       text-align: left;
       /*top: 40px;*/
       left: 60px
@@ -1177,6 +1193,20 @@ Edit it there if you must please*/
 
 
 .my__para {
+      position: relative;
+      line-height: 1.6rem;
+      max-width: 400px
+  }
+  }
+
+
+
+@media (min-width: 800px){
+
+
+
+.my__para {
+      max-width: 250px;
       text-align: left;
       position: relative;
       line-height: 1.6rem;
