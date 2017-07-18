@@ -1173,6 +1173,9 @@ Edit it there if you must please*/
       /*top: 40px;*/
       left: 60px
   }
+      .my__headline hr {
+        visibility: visible;
+      }
   }
 
 
@@ -1183,7 +1186,7 @@ Edit it there if you must please*/
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 35px;
+    padding-top: 25px;
   }
 
 
@@ -1447,7 +1450,7 @@ text-align: center;
   font-size: 1rem;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  bottom: -8px;
   width: 100%;
   text-align: center;
   font-style: italic;

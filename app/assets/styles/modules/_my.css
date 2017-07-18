@@ -58,6 +58,9 @@
       text-align: left;
       /*top: 40px;*/
       left: 60px;
+      hr {
+        visibility: visible;
+      }
     }
   }
 
@@ -67,7 +70,7 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 35px;
+    padding-top: 25px;
 
     @mixin atMedium {
       position: relative;
