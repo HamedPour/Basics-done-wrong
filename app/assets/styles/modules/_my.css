@@ -43,18 +43,20 @@
     position: relative;
 
     @mixin atSmall {
-    padding-top: 40px;
+    padding-top: 15px;
     text-align: center;
 
   }
 
     @mixin atMedium {
+      padding-top: 40px;
       text-align: center;
       hr {
         visibility: hidden;
       }
     }
     @mixin atLarge {
+      padding-top: 40px;
       text-align: left;
       /*top: 40px;*/
       left: 60px;

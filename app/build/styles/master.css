@@ -1143,7 +1143,7 @@ Edit it there if you must please*/
 
 
 .my__headline {
-    padding-top: 40px;
+    padding-top: 15px;
     text-align: center
   }
   }
@@ -1155,6 +1155,7 @@ Edit it there if you must please*/
 
 
 .my__headline {
+      padding-top: 40px;
       text-align: center
   }
       .my__headline hr {
@@ -1169,6 +1170,7 @@ Edit it there if you must please*/
 
 
 .my__headline {
+      padding-top: 40px;
       text-align: left;
       /*top: 40px;*/
       left: 60px
@@ -1375,6 +1377,13 @@ at this time I would opt-out images on smallscreens*/
        cursor: pointer;
        color: #EEBF00;
      }
+
+
+
+#email{
+  color: black;
+  font-style: italic;
+}
 
 
 
