@@ -10553,92 +10553,6 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var MySection = function () {
-  function MySection() {
-    _classCallCheck(this, MySection);
-
-    this.bioButton = (0, _jquery2.default)("#bioButton");
-    this.eduButton = (0, _jquery2.default)("#eduButton");
-    this.expButton = (0, _jquery2.default)("#expButton");
-    this.travelButton = (0, _jquery2.default)("#travelButton");
-    // =================================================================
-    this.bioSection = (0, _jquery2.default)("#my-bio");
-    this.eduSection = (0, _jquery2.default)("#my-edu");
-    this.expSection = (0, _jquery2.default)("#my-exp");
-    this.travelSection = (0, _jquery2.default)("#my-travels");
-
-    // =================================================================
-
-    this.events();
-    this.toggleVisiableBio();
-    // this.toggleVisiableEdu();
-    // this.toggleVisiableExp();
-    // this.toggleVisiableTravel();
-  }
-
-  _createClass(MySection, [{
-    key: "events",
-    value: function events() {
-      this.bioButton.click(this.toggleVisiableBio.bind(this));
-      this.eduButton.click(this.toggleVisiableEdu.bind(this));
-      this.expButton.click(this.toggleVisiableExp.bind(this));
-      this.travelButton.click(this.toggleVisiableTravel.bind(this));
-    }
-
-    // My-Section visiablity toggle
-
-  }, {
-    key: "toggleVisiableBio",
-    value: function toggleVisiableBio() {
-      this.bioSection.toggleClass("my--is-visible");
-      this.bioButton.toggleClass("btn--active");
-    }
-  }, {
-    key: "toggleVisiableEdu",
-    value: function toggleVisiableEdu() {
-      this.eduSection.toggleClass("my--is-visible");
-      this.eduButton.toggleClass("btn--active");
-    }
-  }, {
-    key: "toggleVisiableExp",
-    value: function toggleVisiableExp() {
-      this.expSection.toggleClass("my--is-visible");
-      this.expButton.toggleClass("btn--active");
-    }
-  }, {
-    key: "toggleVisiableTravel",
-    value: function toggleVisiableTravel() {
-      this.travelSection.toggleClass("my--is-visible");
-      this.travelButton.toggleClass("btn--active");
-    }
-  }]);
-
-  return MySection;
-}();
-
-exports.default = MySection;
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _jquery = __webpack_require__(0);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
 var _noframework = __webpack_require__(11);
 
 var _noframework2 = _interopRequireDefault(_noframework);
@@ -10686,6 +10600,42 @@ var RevealOnScroll = function () {
 exports.default = RevealOnScroll;
 
 /***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+function changeSection(evt, sectionName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        tablinks[i].className = tablinks[i].className.replace(" btn--active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(sectionName).style.display = "block";
+    evt.currentTarget.className += " active";
+    evt.currentTarget.className += " btn--active";
+}
+
+exports.default = changeSection;
+
+/***/ }),
 /* 6 */,
 /* 7 */,
 /* 8 */,
@@ -10703,17 +10653,17 @@ var _MobileMenu = __webpack_require__(2);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
-var _MySection = __webpack_require__(4);
-
-var _MySection2 = _interopRequireDefault(_MySection);
-
-var _RevealOnScroll = __webpack_require__(5);
+var _RevealOnScroll = __webpack_require__(4);
 
 var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
 
 var _Carousel = __webpack_require__(1);
 
 var _Carousel2 = _interopRequireDefault(_Carousel);
+
+var _Tabs = __webpack_require__(5);
+
+var _Tabs2 = _interopRequireDefault(_Tabs);
 
 var _jquery = __webpack_require__(0);
 
@@ -10723,8 +10673,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var modal = new _Modal2.default();
 var mobileMenu = new _MobileMenu2.default();
-var mySection = new _MySection2.default();
-
 // =============================================================================
 new _RevealOnScroll2.default((0, _jquery2.default)(".topics"), "90%");
 new _RevealOnScroll2.default((0, _jquery2.default)(".my"), "85%");
@@ -10739,6 +10687,22 @@ mySlidesBio.next(6000);
 mySlidesEdu.next(7500);
 mySlidesExp.next(8800);
 mySlidesTravel.next(10000);
+// =============================================================================
+//Will have to come back and clean this up into a proper Class - be less of a scrublord!
+(0, _jquery2.default)("#bioButton").click(function () {
+  (0, _Tabs2.default)(event, 'my-bio');
+});
+(0, _jquery2.default)("#eduButton").click(function () {
+  (0, _Tabs2.default)(event, 'my-edu');
+});
+(0, _jquery2.default)("#expButton").click(function () {
+  (0, _Tabs2.default)(event, 'my-exp');
+});
+(0, _jquery2.default)("#travelButton").click(function () {
+  (0, _Tabs2.default)(event, 'my-travels');
+}
+// =============================================================================
+);
 
 /***/ }),
 /* 10 */,

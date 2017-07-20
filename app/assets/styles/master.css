@@ -29,3 +29,4 @@ Make sure you NPM postcss IMPORT before or else it wont work*/
 @import "modules/_social-icons";
 @import "modules/_reveal-item";
 @import "modules/_carousel";
+@import "modules/_tab";

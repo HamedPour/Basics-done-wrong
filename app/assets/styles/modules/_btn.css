@@ -33,3 +33,7 @@
       }
   }
 }
+
+.btn:hover {
+  background-color: rgba($mainGreen, 0.6);
+}
