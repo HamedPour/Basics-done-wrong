@@ -2,7 +2,7 @@
 Hello ALL,
 
 
-This is, as the name of the repo suggests of course, my personal page.
+This is, as the name of the repo suggests, my personal page.
 
 I've taken the time to make this using PostCSS and opted to not use Bootstrap
 for the simple fact that I had more customizable freedom.
@@ -16,3 +16,6 @@ I know it’s a hassle but if you could please give me some feedback I would be 
 
 Thank you all
 Hamed
+
+PS:
+Special thanks to Mart Roosmaa for being a brilliant Estonian programmer and friend. Would have never gotten into programming without his “C++ programming in 30 days”.
