@@ -31,12 +31,17 @@
    &--para {
      font-family: 'El Messiri', sans-serif;
      line-height: 2rem;
-     max-width: 400px;
+     max-width: 300px;
      font-size: 1.4rem;
      margin-left: auto;
      margin-right: auto;
      text-align: center;
      padding-top: 30px;
+
+     @mixin atMedium{
+       max-width: 400px;
+
+     }
    }
 
    &__close{

@@ -1351,13 +1351,24 @@ at this time I would opt-out images on smallscreens*/
 .modal--para {
      font-family: 'El Messiri', sans-serif;
      line-height: 2rem;
-     max-width: 400px;
+     max-width: 300px;
      font-size: 1.4rem;
      margin-left: auto;
      margin-right: auto;
      text-align: center;
      padding-top: 30px;
    }
+
+
+
+@media (min-width: 600px){
+
+
+
+.modal--para {
+       max-width: 400px
+   }
+  }
 
 
 
