@@ -1398,6 +1398,13 @@ at this time I would opt-out images on smallscreens*/
 #email{
   color: black;
   font-style: italic;
+
+}
+
+
+
+a{
+  text-decoration: none;
 }
 
 
