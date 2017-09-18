@@ -974,14 +974,14 @@ Edit it there if you must please*/
 
 .icon {
     background-image:
-    url('../../assets/images/sprites/sprite-32044dab.svg');
+    url('../../assets/images/sprites/sprite-6f911b0a.svg');
   }
 
 
 
 .no-svg .icon {
     background-image:
-    url('../../assets/images/sprites/sprite-32044dab.png');
+    url('../../assets/images/sprites/sprite-6f911b0a.png');
   }
 
 
@@ -989,7 +989,7 @@ Edit it there if you must please*/
 .icon--brain {
     width: 30px;
     height: 30px;
-    background-position: 34.78260869565217% 35.714285714285715% ;
+    background-position: 89.5104895104895% 40.45643153526971% ;
   }
 
 
@@ -997,7 +997,7 @@ Edit it there if you must please*/
 .icon--coding {
     width: 40px;
     height: 30px;
-    background-position: 70.3125% 46.42857142857143% ;
+    background-position: 99.644128113879% 6.224066390041494% ;
   }
 
 
@@ -1005,7 +1005,7 @@ Edit it there if you must please*/
 .icon--compass {
     width: 30px;
     height: 30px;
-    background-position: 69.56521739130434% 85.71428571428571% ;
+    background-position: 97.9020979020979% 32.365145228215766% ;
   }
 
 
@@ -1013,7 +1013,7 @@ Edit it there if you must please*/
 .icon--facebook {
     width: 48px;
     height: 42px;
-    background-position: 0 41.666666666666664% ;
+    background-position: 92.4187725631769% 15.319148936170214% ;
   }
 
 
@@ -1021,7 +1021,7 @@ Edit it there if you must please*/
 .icon--graduation {
     width: 30px;
     height: 30px;
-    background-position: 100% 0 ;
+    background-position: 97.9020979020979% 14.937759336099585% ;
   }
 
 
@@ -1029,7 +1029,7 @@ Edit it there if you must please*/
 .icon--hamedlogo {
     width: 90px;
     height: 30px;
-    background-position: 0 0 ;
+    background-position: 100% 0 ;
   }
 
 
@@ -1037,7 +1037,15 @@ Edit it there if you must please*/
 .icon--mail {
     width: 48px;
     height: 39px;
-    background-position: 75% 0 ;
+    background-position: 92.4187725631769% 32.98097251585624% ;
+  }
+
+
+
+.icon--mouse {
+    width: 512px;
+    height: 512px;
+    background-position: 0 0 ;
   }
 
 
@@ -1045,7 +1053,7 @@ Edit it there if you must please*/
 .icon--pen {
     width: 30px;
     height: 30px;
-    background-position: 100% 35.714285714285715% ;
+    background-position: 97.9020979020979% 23.651452282157678% ;
   }
 
 
@@ -1053,7 +1061,7 @@ Edit it there if you must please*/
 .icon--twitter {
     width: 48px;
     height: 42px;
-    background-position: 0 100% ;
+    background-position: 92.4187725631769% 6.382978723404255% ;
   }
 
 
@@ -1061,7 +1069,7 @@ Edit it there if you must please*/
 .icon--whatsapp {
     width: 48px;
     height: 42px;
-    background-position: 40% 100% ;
+    background-position: 92.4187725631769% 24.25531914893617% ;
   }
 
 
