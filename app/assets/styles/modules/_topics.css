@@ -2,6 +2,10 @@
 
   font-size: 0.7rem;
 
+  &:nth-child(4) > *{
+    border-right: none ;
+  }
+
   &-bio {
     border-bottom: 4px solid $btnGreen;
 

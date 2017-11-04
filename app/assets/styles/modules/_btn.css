@@ -12,6 +12,7 @@
     @mixin atMedium {
 
     border-right: 2px solid $mistyGray;
+
     }
   }
 
