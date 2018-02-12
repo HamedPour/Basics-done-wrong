@@ -791,6 +791,17 @@ body {
 
 
 
+@media (min-width: 600px){
+
+
+
+.headline__mobileOnly {
+      display: none
+  }
+  }
+
+
+
 .headline__numbers {
     display: none;
   }
@@ -805,9 +816,9 @@ body {
       color: #16b07c;
       font-family: sans-serif;
       display: block;
-      font-size: 5rem;
+      font-size: 2.2rem;
       font-weight: 200;
-      text-shadow: 2px 2px #333;
+      text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
       margin-left: 15px
   }
   }
@@ -824,7 +835,7 @@ body {
 .aboutme h3 {
 
     padding-left: 40px;
-    padding-top: 30px;
+    padding-top: 10px;
   }
 
 
@@ -853,9 +864,8 @@ body {
     font-weight: 600;
     margin-top: 20px;
     margin-bottom: 5px;
-    padding-left: 40px;
+    padding-left: 42px;
     padding-bottom: 20px;
-    max-width: 300px;
   }
 
 
@@ -865,6 +875,8 @@ body {
 
 
 .aboutme p{
+      max-width: 350px;
+      padding-right: 10px;
       padding-left: 100px;
       margin-bottom: 20px
   }
@@ -1204,10 +1216,10 @@ Edit it there if you must please*/
 .my__para {
     max-width: 250px;
     line-height: 1.4rem;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
     padding-top: 25px;
+    text-align: justify;
   }
 
 
@@ -1231,7 +1243,6 @@ Edit it there if you must please*/
 
 .my__para {
       max-width: 250px;
-      text-align: left;
       position: relative;
       line-height: 1.6rem;
       float: left;

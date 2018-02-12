@@ -10,18 +10,21 @@
     }
   }
 
+  &__mobileOnly {
+    @mixin atMedium {
+      display: none;
+    }
+  }
 
   &__numbers {
     display: none;
-
-
     @mixin atMedium {
       color: $mainGreen;
       font-family: sans-serif;
       display: block;
-      font-size: 5rem;
+      font-size: 2.2rem;
       font-weight: 200;
-      text-shadow: 2px 2px #333;
+      text-shadow: 2px 2px 2px rgba(#000,0.6);
       margin-left: 15px;
     }
   }
