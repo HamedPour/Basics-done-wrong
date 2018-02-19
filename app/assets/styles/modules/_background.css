@@ -1,5 +1,5 @@
 body {
-  background-image: url("../../assets/images/background.jpg");
+  background-image: url("../../assets/images/BG2.png");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,10 +11,10 @@ body {
 .background {
 
   &--green {
-    background-color: rgba($mainGreen, 0.8);
+    background-color: rgba($mainGreen, 0.6);
 
     @mixin atSmall {
-      background-color: $mainGreen;
+      background-color: rgba($mainGreen, 0.4);
     }
   }
 

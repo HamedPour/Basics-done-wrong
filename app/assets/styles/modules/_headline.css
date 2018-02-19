@@ -16,7 +16,7 @@
     }
   }
 
-  &__numbers {
+  &__WDD {
     display: none;
     @mixin atMedium {
       color: $mainGreen;

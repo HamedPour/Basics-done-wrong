@@ -1,41 +1,51 @@
+/*
+  If you see this ... I am so very very sorry. It is such a mess and I haven't had time to just redo the whole blasted thing in Vue & Vuetify and be done with it. Please please dont judge me too harshly.
+ */
+
 .aboutme{
 
-
-  h2{
-    margin-top: 40px;
-    padding-left: 80px;
-  }
-
-  h3 {
-
-    padding-left: 40px;
-    padding-top: 10px;
-    hr {
-      margin-top: 15px;
-      max-width: 70px;
-    }
-
+  &__textStack {
+    margin: 0 auto;
     @mixin atMedium {
+      padding-left: 15px;
+      padding-right: 15px;
       padding-top: 20px;
-      padding-left: 98px;
-      max-width: 300px;
+      padding-bottom: 20px;
     }
-  }
 
-
-  p{
-    font-weight: 600;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    padding-left: 42px;
-    padding-bottom: 20px;
-
-    @mixin atMedium {
-      max-width: 350px;
-      padding-right: 10px;
-      padding-left: 100px;
-      margin-bottom: 20px;
+    @mixin atLarge {
+      width: 300px;
+      padding-top: 40px;
+      padding-bottom: 30px;
     }
+
+    h2 {
+      margin: 0;
+      padding: 20px 0;
+      @mixin atLarge {
+        font-size: 2.6rem;
+      }
+
+    }
+    h3 {
+      padding: 20px 0;
+      @mixin atLarge {
+        font-size: 1.8rem;
+      }
+    }
+    hr {
+      width: 80px;
+    }
+    p {
+      font-weight: 600;
+      padding: 20px 0px;
+      text-align: justify;
+      @mixin atMedium {
+        text-align: left;
+        font-size: 1rem;
+      }
+    }
+
   }
 
 }

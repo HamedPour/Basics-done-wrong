@@ -21,3 +21,14 @@ a {
   color: $mainFont;
   text-decoration: none;
 }
+
+
+.credits {
+  opacity: 0.3;
+  font-size: 0.8rem;
+  font-weight: 200;
+  color: #000 !important;
+  a {
+    color: $mainFont;
+  }
+}
