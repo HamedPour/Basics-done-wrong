@@ -21,7 +21,7 @@
       display: block;
       position: relative;
       margin-left: 40px;
-      width: 46%;
+      max-width: 370px;
       margin-top: 40px;
       height: auto;
       float: left;
@@ -64,6 +64,7 @@
   }
 
   &__para {
+    // border: 1px solid red;
     max-width: 250px;
     line-height: 1.4rem;
     margin-left: auto;
@@ -113,5 +114,31 @@ at this time I would opt-out images on smallscreens*/
   display: none;
   @mixin atLarge{
     display: block;
+  }
+
+}
+
+.my__skills {
+  // border: 1px solid green;
+  margin: 0 auto;
+  text-align: center;
+  h5 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+  @mixin atMedium {
+    position: relative;
+    line-height: 1.6rem;
+    max-width: 400px;
+  }
+  @mixin atLarge {
+    max-width: 300px;
+    text-align: left;
+    position: relative;
+    line-height: 1.6rem;
+    float: left;
+    left: 60px;
   }
 }

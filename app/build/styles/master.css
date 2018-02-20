@@ -1205,7 +1205,7 @@ Edit it there if you must please*/
       display: block;
       position: relative;
       margin-left: 40px;
-      width: 46%;
+      max-width: 370px;
       margin-top: 40px;
       height: auto;
       float: left;
@@ -1275,6 +1275,7 @@ Edit it there if you must please*/
 
 
 .my__para {
+    // border: 1px solid red;
     max-width: 250px;
     line-height: 1.4rem;
     margin-left: auto;
@@ -1358,6 +1359,7 @@ at this time I would opt-out images on smallscreens*/
 
 .mobileSlides{
   display: none;
+
 }
 
 
@@ -1368,6 +1370,53 @@ at this time I would opt-out images on smallscreens*/
 
 .mobileSlides{
     display: block
+
+}
+  }
+
+
+
+.my__skills {
+  // border: 1px solid green;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+.my__skills h5 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+
+
+
+@media (min-width: 600px){
+
+
+
+.my__skills {
+    position: relative;
+    line-height: 1.6rem;
+    max-width: 400px
+}
+  }
+
+
+
+@media (min-width: 800px){
+
+
+
+.my__skills {
+    max-width: 300px;
+    text-align: left;
+    position: relative;
+    line-height: 1.6rem;
+    float: left;
+    left: 60px
 }
   }
 
